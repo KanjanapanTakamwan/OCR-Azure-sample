@@ -24,6 +24,6 @@ def correct_text_ocr(image_path):
 num = [1, 2]
 
 for index, i in enumerate(num):
-    image_path = "/Applications/XAMPP/xamppfiles/htdocs/OCR-Azure-sample/image/match_{}.jpg".format(i)
+    image_path = "./image/match_{}.jpg".format(i)
     data = correct_text_ocr(image_path)
     print(f"{index+1}: {data}\n")

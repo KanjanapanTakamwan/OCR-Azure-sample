@@ -14,10 +14,7 @@ def correct_text_ocr(image_path):
         for region in result.regions:
             for line in region.lines:
                 for word in line.words:
-                    bounding_box = word.bounding_box.split(',')
-                    x, y, w, h = map(int, bounding_box)
-                    bounding_box_str = f"({x},{y},{w},{h})"
-                    data.append((word.text, bounding_box_str))
+                    data.append(word.text)
     return data
 
 num = [1, 2]

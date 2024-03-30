@@ -1,5 +1,6 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
+# pip install azure-cognitiveservices-vision-computervision msrest pillow matplotlib
 
 subscription_key = "7b7d351c702e4332a6aac818d3222f54"
 endpoint = "https://demo-orc-python.cognitiveservices.azure.com/"
